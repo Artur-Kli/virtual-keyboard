@@ -18,3 +18,29 @@ const keys = document.querySelectorAll('.key');
 keys.forEach((key, index) => {
   key.setAttribute('id', `${Object.keys(keyLayout)[index]}`);
 });
+
+keyboard.keyboard.addEventListener('mousedown', (event) => {
+  const { target } = event;
+  if (target.classList.contains('key')) {
+    target.classList.add('active');
+  }
+});
+
+keyboard.keyboard.addEventListener('mouseup', (event) => {
+  const { target } = event;
+  if (target.classList.contains('key')) {
+    target.classList.remove('active');
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (document.getElementById(event.code)) {
+    document.getElementById(event.code).classList.add('active');
+  }
+});
+
+document.addEventListener('keyup', (event) => {
+  if (document.getElementById(event.code)) {
+    document.getElementById(event.code).classList.remove('active');
+  }
+});

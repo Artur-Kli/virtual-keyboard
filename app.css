@@ -52,7 +52,7 @@ textarea {
 }
 
 .active {
-  background-color: #2cfd72;
+  background: #2cfd72 !important;
   border-radius: 50px
 }
 
