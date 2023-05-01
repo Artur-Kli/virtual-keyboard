@@ -19,10 +19,16 @@ keys.forEach((key, index) => {
   key.setAttribute('id', `${Object.keys(keyLayout)[index]}`);
 });
 
+const textarea = document.querySelector('textarea');
+textarea.addEventListener('click', () => {
+  textarea.focus();
+});
+
 keyboard.keyboard.addEventListener('mousedown', (event) => {
   const { target } = event;
   if (target.classList.contains('key')) {
     target.classList.add('active');
+    textarea.value += event.target.textContent;
   }
 });
 
