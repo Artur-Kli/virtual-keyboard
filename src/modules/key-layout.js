@@ -83,8 +83,8 @@ const keyLayout = { // KeyCode : {en: [NORMAL, SHIFT, CAPS] ru: [NORMAL, RIGHTSH
   Backslash: {
     en: ['&bsol;', '&bsol;', '&bsol;'], ru: ['&bsol;', '&bsol;', '&bsol;'],
   },
-  Delete: {
-    en: ['Delete', 'Delete', 'Delete'], ru: ['Delete', 'Delete', 'Delete'],
+  Del: {
+    en: ['Del', 'Del', 'Del'], ru: ['Del', 'Del', 'Del'],
   },
   CapsLock: {
     en: ['CapsLock', 'CapsLock', 'CapsLock'], ru: ['CapsLock', 'CapsLock', 'CapsLock'],
